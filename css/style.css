@@ -3,6 +3,16 @@
   --slate-500: #68778D;
   --slate-300: #D5E1EF;
   --white: #FFFFFF;
+  --font-family-base: 'Outfit', sans-serif;
+
+  --text-header-size: 22px;
+  --text-header-line: 1.2;
+  --text-header-weight: 700;
+
+  --text-subhead-size: 15px;
+  --text-subhead-line: 1.4;
+  --text-subhead-weight: 400;
+  --text-subhead-letter: 0.2px;
 }
 
 body {
@@ -37,11 +47,25 @@ body {
     border-radius: 10px;
 }
 
+.text-content {
+  text-align: center;
+}
+
 .text-content.header{
-    color: var(--slate-900);
+  font-family: var(--font-family-base);
+  font-size: var(--text-header-size);
+  font-weight: var(--text-header-weight);
+  line-height: var(--text-header-line);
+  letter-spacing: 0;
+  color: var(--slate-900);
 }
 
 .text-content .subhead {
+  font-family: var(--font-family-base);
+  font-size: var(--text-subhead-size);
+  font-weight: var(--text-subhead-weight);
+  line-height: var(--text-subhead-line);
+  letter-spacing: var(--text-subhead-letter);
   color: var(--slate-500);
 }
 
